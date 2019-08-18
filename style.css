@@ -1,5 +1,5 @@
 :root {
-	--pColor: #9A9DA2;
+	--pColor: #ffffff;
 	--hColor: #ffffff;
 	--bkColor: #121619;
 	--contrastColor: #285484;
@@ -56,10 +56,6 @@ header {
     background-color: #101316;
 }
 
-.social-i {
-	margin-left: auto;
-}
-
 li {
 	padding: 0 1em;
 }
@@ -69,14 +65,14 @@ li {
     padding: .5em;
     transition: 250ms ease-in;
     border-radius: 50px;
+    color: #ffffff;
 }
 
 .nav a:active,
 .nav a:hover,
 .nav a:focus,
 .nav a:valid {
-    color: #285484;
-    background: #fff;
+    background: #285484;
 }
 
 main section {
@@ -143,7 +139,7 @@ main p {
 
 .grids-parent {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     grid-template-rows: auto;
     margin: auto;
     padding: 2em;
@@ -316,4 +312,23 @@ main p {
     color: #285484;
     font-weight: 900;
     /* margin-left: 2em; */
+}
+
+@media only screen and (max-width: 768px) {
+    .grids-parent {
+        padding: 0;
+    }
+
+    #about h3 {
+        font-size: 1.25rem;
+    }
+
+    #about p {
+        font-size: 0.75rem;
+    }
+
+    #about h2 {
+        font-size: 2.5rem;
+        border-radius: 20px;
+    }
 }
